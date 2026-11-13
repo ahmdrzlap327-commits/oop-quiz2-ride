@@ -7,7 +7,7 @@ public class Passenger {
 
     public Passenger(String passengerId, String name) {
         this.passengerId = passengerId;
-        setName(name);
+        this.name = name;
     }
 
     public String getPassengerId() {
