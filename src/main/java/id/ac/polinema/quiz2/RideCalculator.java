@@ -55,8 +55,8 @@ public class RideCalculator {
      */
     public static void validate(Ride order) throws InvalidDistanceException {
         double distance = order.getDistanceKm();
-        if (distance < 0) {
-            throw new InvalidDistanceException("jarak tidak masuk akal: " + distance);
+        if (!(distance > 0 && distance <= 50)) {
+            throw new InvalidDistanceException("Invalid distance: " + distance);
         }
     }
 
