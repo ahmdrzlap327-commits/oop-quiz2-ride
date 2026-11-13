@@ -11,7 +11,7 @@ public class Passenger {
     }
 
     public String getPassengerId() {
-        return passengerId;
+        return passengerId; 
     }
 
     public String getName() {
@@ -19,7 +19,7 @@ public class Passenger {
     }
 
     public void setName(String name) {
-        if (name.isBlank() || name == null) {
+        if (name == null || name.isBlank()) {
             return;
         }
         this.name = name;
