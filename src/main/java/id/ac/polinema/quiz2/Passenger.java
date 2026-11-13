@@ -1,15 +1,5 @@
 package id.ac.polinema.quiz2;
 
-/**
- * TAHAP 1 (pemanasan): penumpang yang membuat pesanan.
- *
- * Lengkapi setiap method (ganti baris
- * {@code throw new UnsupportedOperationException(...)} dengan kode yang benar).
- * Jangan mengubah nama kelas, nama method, atau signature-nya.
- *
- * Deklarasikan sendiri field-nya sesuai diagram kelas di README.
- * Semua field harus private.
- */
 public class Passenger {
 
     private String passengerId;
@@ -28,12 +18,6 @@ public class Passenger {
         return name;    
     }
 
-    /**
-     * Mengubah nama. Nama yang null atau kosong (hanya spasi) tidak valid:
-     * abaikan dan biarkan nama lama tetap.
-     *
-     * @param name nama baru
-     */
     public void setName(String name) {
         if (name.isEmpty() || name.isBlank()) {
             throw new IllegalArgumentException("Nama tidak boleh kosong");
