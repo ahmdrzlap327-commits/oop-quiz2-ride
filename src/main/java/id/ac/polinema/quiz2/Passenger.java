@@ -20,7 +20,7 @@ public class Passenger {
 
     public void setName(String name) {
         if (name.isBlank() || name == null) {
-            throw new IllegalArgumentException("Nama tidak boleh kosong");
+            return;
         }
         this.name = name;
     }
