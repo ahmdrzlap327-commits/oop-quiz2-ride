@@ -51,7 +51,7 @@ public class RideDispatcher {
      * @return perjalanan yang cocok, atau {@code null} bila tidak ada
      */
     public Ride findById(String rideId) {
-        return  ordersById.get(rideId);
+        return ordersById.get(rideId);
     }
 
     /**
