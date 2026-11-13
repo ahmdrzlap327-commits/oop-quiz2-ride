@@ -1,5 +1,8 @@
 package id.ac.polinema.quiz2;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Tempat bebas untuk mencoba programmu. Kelas ini TIDAK dinilai.
  *
@@ -16,5 +19,9 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Ojek Online: tulis percobaanmu di sini.");
+
+        Passenger passenger = new Passenger("P001", "Rina");
+        System.out.println(passenger.getName());
+        passenger.setName("");
     }
 }
